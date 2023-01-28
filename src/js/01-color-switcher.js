@@ -6,7 +6,7 @@ const refs = {
 
 refs.startBtn.addEventListener('click', onStartButtonClick);
 refs.stopBtn.addEventListener('click', onStopButtonClick);
-
+let timerColorChange;
 
 function onStartButtonClick() {
     refs.startBtn.disabled = true;
