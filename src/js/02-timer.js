@@ -1,5 +1,5 @@
-import flatpickr from "flatpickr";
-import "flatpickr/dist/flatpickr.min.css";
+import flatpickr from "../../node_modules/flatpickr";
+import "../../node_modules/flatpickr/dist/flatpickr.min.css";
 
 
 const refs = {
@@ -48,7 +48,7 @@ class Timer {
       const currentTime = Date.now();
         const deltaTime = startTime - currentTime;
         if (startTime < currentTime) {
-            clearInterval(intervalId);
+            clearInterval(this.intervalId);
         }
         const time = this.convertMs(deltaTime);
         console.log(startTime);
